@@ -1,12 +1,11 @@
-import express from 'express';
-import { graphqlExpress, graphiqlExpress } from 'apollo-server-express';
-import bodyParser from 'body-parser';
+const express = require('express');
+const { graphqlExpress, graphiqlExpress } = require('apollo-server-express');
+const bodyParser = require('body-parser');
 
-import * as Schema from './schema';
+const Schema = require('./schema');
 
 const PORT = 3000;
 const server = express();
-
 
 
 const schemaFunction =
